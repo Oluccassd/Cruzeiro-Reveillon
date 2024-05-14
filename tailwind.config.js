@@ -7,6 +7,9 @@ module.exports = {
     extend: {colors: {
       'btn-color': '#b417d9', // Defina sua cor personalizada aqui
     },
+    fontFamily: {
+      'open-sans': ['Open Sans', 'sans-serif'],
+    }
     },
   },
   plugins: [],

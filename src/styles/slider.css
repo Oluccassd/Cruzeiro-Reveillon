@@ -1,11 +1,12 @@
-section.slider {
-    margin: 0;
-    width: 100%;
-    height: auto;
-    padding: 0 !important;
+#slider-1 img {
+    height: 40rem;
 }
-.slider-content {
-    width: 400%;
-    height: auto;
-    display: flex;
+.swiper-pagination-bullet {
+    width: 1rem !important;
+    height: 1rem !important;
+    opacity: 1 !important;
+    background-color: rgb(240, 248, 255) !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #b417d9 !important;
 }

@@ -46,8 +46,21 @@ header {
 
 .sobreposicao {
     position: relative;
-    bottom: -250px; /* Ajuste a posição vertical conforme necessário */
-    left: 10px; /* Ajuste a posição horizontal conforme necessário */
-    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    bottom: -250px;
+    /* Ajuste a posição vertical conforme necessário */
+    left: 10px;
+    /* Ajuste a posição horizontal conforme necessário */
+    width: 300px;
+    /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
+}
+
+.sobreposicao2 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 20rem;
+    justify-content: center;
+    z-index: 2;
 }
