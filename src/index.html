@@ -254,9 +254,61 @@
 
 
 
-  <section id="faq" class="flex items-center justify-center w-40 bg-white">
+  <section id="faq" class="m-8">
 
+    <div class="max-w-2xl mx-auto flex flex-col gap-1">
+    
+      <details class="" onclick="toggleRotation(this)">
+        <summary class="font-semibold bg-gray-200 p-4 p-3 cursor-pointer flex justify-between items-center">
+          <span class="text-black font-semibold font-roboto text-lg leading-none">1 - lorem 1 ?</span>
+          <span class="ml-auto rotate"><img src="./images/arrow.png" alt=""></span>
+        </summary>
+        <div class="p-3 bg-white p-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem tenetur, repellat, unde modi libero nulla dicta provident maiores atque sed! Eveniet natus similique fugit exercitationem hic voluptatem? Quod, atque!</p>
+        </div>
+      </details>
+      
+      <details class="" onclick="toggleRotation(this)">
+        <summary class="font-semibold bg-gray-200 p-4 p-3 cursor-pointer flex justify-between items-center">
+          <span class="text-black font-semibold font-roboto text-lg leading-none">2 - lorem 2 ?</span>
+          <span class="ml-auto rotate"><img src="./images/arrow.png" alt=""></span>
+        </summary>
+        <div class="p-3 bg-white p-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem tenetur, repellat, unde modi libero nulla dicta provident maiores atque sed! Eveniet natus similique fugit exercitationem hic voluptatem? Quod, atque!</p>
+        </div>
+      </details>
+      
+      <details class="" onclick="toggleRotation(this)">
+        <summary class="font-semibold bg-gray-200 p-4 p-3 cursor-pointer flex justify-between items-center">
+          <span class="text-black font-semibold font-roboto text-lg leading-none">3 - lorem 3 ?</span>
+          <span class="ml-auto rotate"><img src="./images/arrow.png" alt=""></span>
+        </summary>
+        <div class="p-3 bg-white p-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem tenetur, repellat, unde modi libero nulla dicta provident maiores atque sed! Eveniet natus similique fugit exercitationem hic voluptatem? Quod, atque!</p>
+        </div>
+      </details>
+      
+      <details class="" onclick="toggleRotation(this)">
+        <summary class="font-semibold bg-gray-200 p-4 p-3 cursor-pointer flex justify-between items-center">
+          <span class="text-black font-semibold font-roboto text-lg leading-none">4 - lorem 4 ?</span>
+          <span class="ml-auto rotate"><img src="./images/arrow.png" alt=""></span>
+        </summary>
+        <div class="p-3 bg-white p-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, rem tenetur, repellat, unde modi libero nulla dicta provident maiores atque sed! Eveniet natus similique fugit exercitationem hic voluptatem? Quod, atque!</p>
+        </div>
+      </details>
+  
+    </div>
   </section>
+  
+  <script>
+    function toggleRotation(element) {
+      const icon = element.querySelector('.rotate');
+      icon.classList.toggle('rotated');
+    }
+  </script>
+
+
 
 
 <a href="#" class="flex justify-center items-center m-10" id="Whatsapp">
