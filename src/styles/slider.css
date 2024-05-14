@@ -1,0 +1,11 @@
+section.slider {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+}
+.slider-content {
+    width: 400%;
+    height: auto;
+    display: flex;
+}
