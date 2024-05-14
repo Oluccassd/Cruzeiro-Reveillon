@@ -1,16 +1,17 @@
-const { black } = require('color-name');
-
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {colors: {
-      'btn-color': '#b417d9', // Defina sua cor personalizada aqui
-    },
-    fontFamily: {
-      'open-sans': ['Open Sans', 'sans-serif'],
-    }
+    extend: {
+      boxShadow: {
+        custom: '4px 4px 1px rgba(0, 0, 0, 1)',
+      },
+      fontFamily: {
+        'roboto': ['Roboto Condensed'],
+      },
+      spacing: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],
-}
+};
