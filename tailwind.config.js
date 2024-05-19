@@ -1,12 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      boxShadow: {
-        custom: '4px 4px 1px rgba(0, 0, 0, 1)',
-      },
       fontFamily: {
-        'roboto': ['Roboto Condensed'],
+        'sans': ['Roboto Condensed', ...defaultTheme.fontFamily.sans],
       },
       spacing: {
         '128': '32rem',

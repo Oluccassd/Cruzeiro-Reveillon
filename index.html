@@ -1,294 +1,764 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+		<script src="./tailwind.config.js"></script>
+		<title>Cruzeiros Reveillon</title>
+		<meta
+			name="”description”"
+			content="site viagens de cruzeiros" />
+		<link
+			rel="shortcut icon"
+			href="./imgs/ship-solid.svg"
+			type="image/x-icon" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        module.exports = {
-            content: ["./src/**/*.{html,js}"],
-            theme: {
-                extend: {
-                },
-            },
-            plugins: [],
-        };
-    </script>
-    <script
-        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <title>Cruzeiros Reveillon</title>
-    <link rel="shortcut icon" href="./imgs/Logo.png" type="image/x-icon">
-</head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
 
-<body class="flex flex-col justify-center items-center overflow-x-hidden">
-
-    <header class="flex justify-between items-center p-4 font-bold uppercase w-screen">
-        <div>
-            <a href="./index.html"><img src="./imgs/Logo.png" alt="Cruzeiros Reveillon" style="filter: drop-shadow(3.064px 2.571px 0px #000000);" /></a>
-        </div>
-
-        <div class="flex gap-8 items-center font-roboto">
-            <a href="#" class="no-underline text-2xl bg- ">INÍCIO</a>
-            <a href="#" class="no-underline text-2xl ">DESTINOS</a>
-            <a href="#" class="no-underline text-2xl ">COMPANHIAS</a>
-            <a href="#" class="no-underline text-2xl ">NAVIOS</a>
-            <a href="#" class="no-underline text-2xl ">BLOG</a>
-            <a href="#"><img src="./imgs/whatsapp_logo.png" alt="Whatsapp" width="34px" class="mr-8" /></a>
-        </div>
-    </header>
-
-    <section id="slider">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <img src="./imgs/Fundo 1.png" alt="" class="w-svw">
-            </div>
-        </div>
-    </section>
-    <div id="container" class="flex flex-col items-center justify-center max-w-7xl">
-        <section id="embarque" class="mt-14 mb-16">
-            <h1 class="text-4xl font-roboto font-bold uppercase text-center mb-2">Escolha o melhor lugar para
-                embarque</h1>
-            <div id="cardEmbarque-organizer" class="flex gap-10 mt-9">
-                <div class="cardEmbarque flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino.png" alt="" class="cursor-pointer">
-                    <p class="font-bold text-base mb-2 mt-6">Santos</p>
-                    <button class="bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA MAIS</button>
+	<body class="w-full h-full">
+		<header class="font-bold uppercase">
+			<div
+				id="container"
+				class="max-w-[1200px] mx-auto grid lg:grid-cols-2 pt-5 lg:p-0 p-10">
+				<div class="text-center lg:text-left">
+					<img
+						src="./imgs/logo-cruzeiros-reveillon.webp"
+						alt="Cruzeiros Reveillon"
+						class="mb-5 mx-auto lg:mx-0"
+						title="Cruzeiros Reveillon" />
+				</div>
+				<div class="lg:flex gap-10 items-center font-bold lg:text-right">
+                    <a href="#" title="inicio" class="no-underline text-xl">INÍCIO</a>
+                    <a href="#" title="destinos" class="no-underline text-xl">DESTINOS</a>
+                    <a href="#" title="companhias" class="no-underline text-xl">COMPANHIAS</a>
+                    <a href="#" title="navios" class="no-underline text-xl">NAVIOS</a>
+                    <a href="#" title="blog" class="no-underline text-xl">BLOG</a>
+                    <a href="#" title="Whatsapp" class="no-underline text-xl">
+                        <img
+                            src="./imgs/whatsapp_logo.webp"
+                            alt="Whatsapp"
+                            title="Whatsapp"
+                            width="34"
+                            height="34"
+                            class="inline-block max-w-[34px] w-auto h-auto"
+                        />
+                    </a>
                 </div>
-                <div class="cardEmbarque flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino.png" alt="" class="cursor-pointer">
-                    <p class="font-bold text-base mb-2 mt-6">Santos</p>
-                    <button class="bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA MAIS</button>
+
+			</div>
+		</header>
+		<section
+			title="slider"
+			class="bg-[url(./imgs/teaser.webp)] w-full py-60 bg-cover bg-center">
+
+            <h2 class="font-bold italic text-white text-center text-5xl max-w-[1200px] mx-auto w-full">Sua viagem começa aqui</h2>
+
+		</section>
+		<section title="embarque" class="max-w-[1200px] mx-auto w-full lg:px-0 px-10">
+			<h2 class="text-3xl font-bold text-center mb-9 mt-16">
+				Escolha o melhor lugar para embarque
+			</h2>
+			<div
+				id="cardEmbarque-organizer"
+				class="grid lg:grid-cols-5 gap-10 w-full">
+				<div
+					class="cardEmbarque flex flex-col justify-center items-center">
+					<img
+						src="./imgs/capa-de-destino.webp"
+						alt="Destino"
+						class="w-full"
+						title="destino"
+						loading="lazy" />
+					<p
+						class="font-bold text-base mb-2 mt-6">
+						Santos
+					</p>
+					<a
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs w-auto mx-auto px-7 py-3 text-center font-bold w-full lg:w-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</a>
+				</div>
+				<div
+					class="cardEmbarque flex flex-col justify-center items-center">
+					<img
+						src="./imgs/capa-de-destino.webp"
+						alt="Destino"
+						class="w-full"
+						title="destino"
+						loading="lazy" />
+					<p
+						class="font-bold text-base mb-2 mt-6">
+						Santos
+					</p>
+					<a
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs mx-auto px-7 py-3 text-center font-bold w-full lg:w-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</a>
+				</div>
+				<div
+					class="cardEmbarque flex flex-col justify-center items-center">
+					<img
+						src="./imgs/capa-de-destino.webp"
+						alt="Destino"
+						class="w-full"
+						title="destino"
+						loading="lazy" />
+					<p
+						class="font-bold text-base mb-2 mt-6">
+						Santos
+					</p>
+					<a
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs w-auto mx-auto px-7 py-3 text-center font-bold w-full lg:w-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</a>
+				</div>
+				<div
+					class="cardEmbarque flex flex-col justify-center items-center">
+					<img
+						src="./imgs/capa-de-destino.webp"
+						alt="Destino"
+						class="w-full"
+						title="destino"
+						loading="lazy" />
+					<p
+						class="font-bold text-base mb-2 mt-6">
+						Santos
+					</p>
+					<a
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs w-auto mx-auto px-7 py-3 text-center font-bold w-full lg:w-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</a>
+				</div>
+				<div
+					class="cardEmbarque flex flex-col justify-center items-center">
+					<img
+						src="./imgs/capa-de-destino.webp"
+						alt="Destino"
+						class="w-full"
+						title="destino"
+						loading="lazy" />
+					<p
+						class="font-bold text-base mb-2 mt-6">
+						Santos
+					</p>
+					<a
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs w-auto mx-auto px-7 py-3 text-center font-bold w-full lg:w-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</a>
+				</div>
+			</div>
+		</section>
+		<section
+			id="heading"
+			class="bg-fuchsia-600 w-full p-10 my-16">
+			<p
+				class="font-bold italic text-white text-center text-5xl max-w-[1200px] mx-auto w-full">
+				Descubra os melhores cruzeiros de Reveillon
+			</p>
+		</section>
+		<section id="cruzeiros" class="grid lg:grid-cols-3 gap-10 w-full max-w-[1200px] mx-auto lg:px-0 px-10">
+	
+                
+				<div
+					href="#"
+					class="cardCruzeiros bg-gray-200 text-center">
+                    <a href="#">
+					<img
+						src="./imgs/capa-de-destino2.webp"
+						title="destino"
+						alt="Destino"
+						class="border-b-8 border-fuchsia-600 w-full" />
+					<div class="textos p-8 text-left">
+						<p class="text-xs">
+							O cruzeiro de Réveillon
+							do Costa Favolosa está
+							com roteiros
+							internacionais, saindo
+							de Santos ou Itajaí e
+							passando por Buenos
+							Aires em sete noites de
+							viagem. Nesse que
+							selecionamos, o embarque
+							e desembarque é na
+							capital argentina [...]
+						</p>
+						<br />
+						<p class="text-xs">
+							Duração: 10 noites<br />
+							Embarque: Buenos Aires –
+							31/12/2023<br />
+							Roteiro: Buenos Aires –
+							Santos – Itajaí –
+							Ilhabela –<br />
+							Santos – Itajaí –
+							Montevidéu – Buenos
+							Aires
+							<br />
+							Tarifa: a partir de R$
+							8.004,00 por pessoa
+							(taxas inclusas)<br />
+							Acomodação em cabine
+							interna dupla.
+						</p>
+					</div>
+					<button
+						href="#"
+						class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+						title="Saiba mais">
+						SAIBA MAIS
+					</button>
+                    </a>
+				</div>
+
+				<div
+					class="cardCruzeiros bg-gray-200 text-center">
+					<a href="#">
+						<img
+							src="./imgs/capa-de-destino2.webp"
+							title="destino"
+							alt="Destino"
+							class="border-b-8 border-fuchsia-600 w-full" />
+						<div class="textos p-8 text-left">
+							<p class="text-xs">
+								O cruzeiro de
+								Réveillon do
+								Costa Favolosa
+								está com
+								roteiros
+								internacionais,
+								saindo de Santos
+								ou Itajaí e
+								passando por
+								Buenos Aires em
+								sete noites de
+								viagem. Nesse
+								que
+								selecionamos, o
+								embarque e
+								desembarque é na
+								capital
+								argentina [...]
+							</p>
+							<br />
+							<p class="text-xs">
+								Duração: 10
+								noites<br />
+								Embarque: Buenos
+								Aires –
+								31/12/2023<br />
+								Roteiro: Buenos
+								Aires – Santos –
+								Itajaí –
+								Ilhabela –<br />
+								Santos – Itajaí
+								– Montevidéu –
+								Buenos Aires
+								<br />
+								Tarifa: a partir
+								de R$ 8.004,00
+								por pessoa
+								(taxas
+								inclusas)<br />
+								Acomodação em
+								cabine interna
+								dupla.
+							</p>
+						</div>
+						<button
+							href="#"
+							class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+							title="Saiba mais">
+							SAIBA MAIS
+						</button>
+					</a>
+				</div>
+
+                
+				<div
+					class="cardCruzeiros bg-gray-200 text-center">
+					<a href="#">
+						<img
+							src="./imgs/capa-de-destino2.webp"
+							title="destino"
+							alt="Destino"
+							class="border-b-8 border-fuchsia-600 w-full" />
+						<div class="textos p-8 text-left">
+							<p class="text-xs">
+								O cruzeiro de
+								Réveillon do
+								Costa Favolosa
+								está com
+								roteiros
+								internacionais,
+								saindo de Santos
+								ou Itajaí e
+								passando por
+								Buenos Aires em
+								sete noites de
+								viagem. Nesse
+								que
+								selecionamos, o
+								embarque e
+								desembarque é na
+								capital
+								argentina [...]
+							</p>
+							<br />
+							<p class="text-xs">
+								Duração: 10
+								noites<br />
+								Embarque: Buenos
+								Aires –
+								31/12/2023<br />
+								Roteiro: Buenos
+								Aires – Santos –
+								Itajaí –
+								Ilhabela –<br />
+								Santos – Itajaí
+								– Montevidéu –
+								Buenos Aires
+								<br />
+								Tarifa: a partir
+								de R$ 8.004,00
+								por pessoa
+								(taxas
+								inclusas)<br />
+								Acomodação em
+								cabine interna
+								dupla.
+							</p>
+						</div>
+						<button
+							href="#"
+							class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+							title="Saiba mais">
+							SAIBA MAIS
+						</button>
+					</a>
+				</div>
+
+                
+                
+				<div
+					class="cardCruzeiros bg-gray-200 text-center">
+					<a href="#">
+						<img
+							src="./imgs/capa-de-destino2.webp"
+							title="destino"
+							alt="Destino"
+							class="border-b-8 border-fuchsia-600 w-full" />
+						<div class="textos p-8 text-left">
+							<p class="text-xs">
+								O cruzeiro de
+								Réveillon do
+								Costa Favolosa
+								está com
+								roteiros
+								internacionais,
+								saindo de Santos
+								ou Itajaí e
+								passando por
+								Buenos Aires em
+								sete noites de
+								viagem. Nesse
+								que
+								selecionamos, o
+								embarque e
+								desembarque é na
+								capital
+								argentina [...]
+							</p>
+							<br />
+							<p class="text-xs">
+								Duração: 10
+								noites<br />
+								Embarque: Buenos
+								Aires –
+								31/12/2023<br />
+								Roteiro: Buenos
+								Aires – Santos –
+								Itajaí –
+								Ilhabela –<br />
+								Santos – Itajaí
+								– Montevidéu –
+								Buenos Aires
+								<br />
+								Tarifa: a partir
+								de R$ 8.004,00
+								por pessoa
+								(taxas
+								inclusas)<br />
+								Acomodação em
+								cabine interna
+								dupla.
+							</p>
+						</div>
+						<button
+							href="#"
+							class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+							title="Saiba mais">
+							SAIBA MAIS
+						</button>
+					</a>
+				</div>
+				<div
+					class="cardCruzeiros bg-gray-200 text-center">
+					<a href="#">
+						<img
+							src="./imgs/capa-de-destino2.webp"
+							title="destino"
+							alt="Destino"
+							class="border-b-8 border-fuchsia-600 w-full" />
+						<div class="textos p-8 text-left">
+							<p class="text-xs">
+								O cruzeiro de
+								Réveillon do
+								Costa Favolosa
+								está com
+								roteiros
+								internacionais,
+								saindo de Santos
+								ou Itajaí e
+								passando por
+								Buenos Aires em
+								sete noites de
+								viagem. Nesse
+								que
+								selecionamos, o
+								embarque e
+								desembarque é na
+								capital
+								argentina [...]
+							</p>
+							<br />
+							<p class="text-xs">
+								Duração: 10
+								noites<br />
+								Embarque: Buenos
+								Aires –
+								31/12/2023<br />
+								Roteiro: Buenos
+								Aires – Santos –
+								Itajaí –
+								Ilhabela –<br />
+								Santos – Itajaí
+								– Montevidéu –
+								Buenos Aires
+								<br />
+								Tarifa: a partir
+								de R$ 8.004,00
+								por pessoa
+								(taxas
+								inclusas)<br />
+								Acomodação em
+								cabine interna
+								dupla.
+							</p>
+						</div>
+						<button
+							href="#"
+							class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+							title="Saiba mais">
+							SAIBA MAIS
+						</button>
+					</a>
+				</div>
+				<div
+					class="cardCruzeiros bg-gray-200 text-center">
+					<a href="#">
+						<img
+							src="./imgs/capa-de-destino2.webp"
+							title="destino"
+							alt="Destino"
+							class="border-b-8 border-fuchsia-600 w-full" />
+						<div class="textos p-8 text-left">
+							<p class="text-xs">
+								O cruzeiro de
+								Réveillon do
+								Costa Favolosa
+								está com
+								roteiros
+								internacionais,
+								saindo de Santos
+								ou Itajaí e
+								passando por
+								Buenos Aires em
+								sete noites de
+								viagem. Nesse
+								que
+								selecionamos, o
+								embarque e
+								desembarque é na
+								capital
+								argentina [...]
+							</p>
+							<br />
+							<p class="text-xs">
+								Duração: 10
+								noites<br />
+								Embarque: Buenos
+								Aires –
+								31/12/2023<br />
+								Roteiro: Buenos
+								Aires – Santos –
+								Itajaí –
+								Ilhabela –<br />
+								Santos – Itajaí
+								– Montevidéu –
+								Buenos Aires
+								<br />
+								Tarifa: a partir
+								de R$ 8.004,00
+								por pessoa
+								(taxas
+								inclusas)<br />
+								Acomodação em
+								cabine interna
+								dupla.
+							</p>
+						</div>
+						<button
+							href="#"
+							class="bg-fuchsia-600 rounded-2xl text-white text-xs w-96 lg:w-auto mx-auto mb-8 px-7 py-3 text-center font-bold mx-auto"
+							title="Saiba mais">
+							SAIBA MAIS
+						</button>
+					</a>
+				</div>
+			</div>
+		</section>
+
+
+        <section
+			id="heading"
+			class="bg-fuchsia-600 w-full p-10 my-16">
+			<p
+				class="font-bold italic text-white text-center text-5xl max-w-[1200px] mx-auto w-full">
+				Conheça mais sobre cruzeiros de Reveillon
+			</p>
+		</section>
+
+		<section
+			title="videos"
+			class="grid lg:grid-cols-3 h-full gap-10 w-full max-w-[1200px] mx-auto lg:px-0 px-10">
+			<a href="#" title="Play" class="group w-full block">
+				<div
+					class="bg-slate-500 w-full h-96 flex items-center justify-center">
+					<div
+						class="flex justify-center items-center bg-slate-200 group-hover:bg-slate-300 text-gray-800 font-bold py-4 px-4 rounded-full text-center">
+						<svg
+							class="h-6 w-6 left-[2px] relative"
+							fill="none"
+							aria-label="play video"
+							viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 3l14 9-14 9V3z" />
+						</svg>
+					</div>
+				</div>
+			</a>
+
+			<a href="#" title="Play" class="group w-full block">
+				<div
+					class="bg-slate-500 w-full h-96 flex items-center justify-center">
+					<div
+						class="flex justify-center items-center bg-slate-200 group-hover:bg-slate-300 text-gray-800 font-bold py-4 px-4 rounded-full text-center"
+						title="Play">
+						<svg
+							class="h-6 w-6 left-[2px] relative"
+							fill="none"
+							aria-label="play video"
+							viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 3l14 9-14 9V3z" />
+						</svg>
+					</div>
+				</div>
+			</a>
+
+			<a href="#" title="Play" class="group w-full block">
+				<div
+					class="bg-slate-500 w-full h-96 flex items-center justify-center">
+					<div
+						class="flex justify-center items-center bg-slate-200 group-hover:bg-slate-300 text-gray-800 font-bold py-4 px-4 rounded-full text-center"
+						title="Play">
+						<svg
+							class="h-6 w-6 left-[2px] relative"
+							fill="none"
+							aria-label="play video"
+							viewBox="0 0 24 24"
+							stroke="currentColor">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M5 3l14 9-14 9V3z" />
+						</svg>
+					</div>
+				</div>
+			</a>
+		</section>
+		<section title="Destaques">
+			<div
+				class="mx-auto max-w-[1200px] mt-16 mb-10 text-center">
+				<p class="font-bold text-3xl mt-5">
+					Navios em Destaque
+				</p>
+				<p class="text-gray-600 text-lg">
+					Descubra a embarcação perfeita para o
+					seu Reveillon
+				</p>
+			</div>
+			<div class="grid lg:grid-cols-3 gap-10 mx-auto max-w-[1200px] lg:px-0 px-10">
+				<div
+					class="cardDestaques relative w-full">
+					<a
+						href="#"
+						class="w-full block"
+						title="MSC Seaview">
+						<p
+							class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">
+							MSC Seaview
+						</p>
+						<img
+							src="./imgs/capa-de-destino3.webp"
+							title="Destino"
+							alt="Destino"
+							class="border-b-8 border-gray w-full"
+							loading="lazy" />
+					</a>
+				</div>
+				<div
+					class="cardDestaques relative">
+					<a
+						href="#"
+						class="w-full block"
+						title="MSC Seaview">
+						<p
+							class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">
+							MSC Seaview
+						</p>
+						<img
+							src="./imgs/capa-de-destino3.webp"
+							title="Destino"
+							alt="Destino"
+							class="border-b-8 border-gray w-full"
+							loading="lazy" />
+					</a>
+				</div>
+				<div
+					class="cardDestaques relative">
+					<a
+						href="#"
+						class="w-full block"
+						title="MSC Seaview">
+						<p
+							class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">
+							MSC Seaview
+						</p>
+						<img
+							src="./imgs/capa-de-destino3.webp"
+							title="Destino"
+							alt="Destino"
+							class="border-b-8 border-gray w-full"
+							loading="lazy" />
+					</a>
+				</div>
+			</div>
+		</section>
+
+        <section
+			id="heading"
+			class="bg-fuchsia-600 p-10 my-16 w-full">
+			<p
+				class="font-bold italic text-white text-center text-5xl max-w-[1200px] mx-auto w-full">
+				Perguntas sobre cruzeiros de Reveillon
+			</p>
+		</section>
+
+
+		<section id="faq" class="max-w-[1200px] mx-auto w-full text-center lg:px-0 px-10">
+			
+
+    
+
+            
+            <div class="group flex flex-col gap-2 border-b-2 border-white bg-gray-100 text-black" tabindex="1">
+                <div class="flex cursor-pointer items-center justify-between group-focus:bg-gray-200 p-5">
+                    <span class="px-3 md:px-3 leading-normal text-xs md:text-2xl text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mattis mi?</span>
+                    <i class="fa-solid fa-angle-down text-2xl transition-all duration-500 group-focus:-rotate-90 text-black"></i>
                 </div>
-                <div class="cardEmbarque flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino.png" alt="" class="cursor-pointer">
-                    <p class="font-bold text-base mb-2 mt-6">Santos</p>
-                    <button class="bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA MAIS</button>
+                <div class="mt-5 text-[#888] transition-opacity opacity-0 invisible absolute h-auto max-h-[0px] text-left text-xs md:text-xl group-focus:relative group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-8 md:px-8 group-focus:py-8 group-focus:pt-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mattis mi. Curabitur at fermentum urna. Integer iaculis non leo nec dignissim. Nam accumsan leo nec feugiat placerat. Pellentesque quis malesuada ipsum, at fermentum diam. Ut sit amet suscipit eros. Duis egestas enim sit amet est tristique, in vestibulum tortor porta. 
                 </div>
-                <div class="cardEmbarque flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino.png" alt="" class="cursor-pointer">
-                    <p class="font-bold text-base mb-2 mt-6">Santos</p>
-                    <button class="bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA MAIS</button>
+            </div><!-- faq item -->
+            <div class="m-0 space-y-10 text-left"></div>
+            <div class="group flex flex-col gap-2 border-b-2 border-white bg-gray-100 text-black" tabindex="1">
+                <div class="flex cursor-pointer items-center justify-between group-focus:bg-gray-200 p-5">
+                    <span class="px-3 md:px-3 leading-normal text-xs md:text-2xl text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mattis mi?</span>
+                    <i class="fa-solid fa-angle-down text-2xl transition-all duration-500 group-focus:-rotate-90 text-black"></i>
                 </div>
-                <div class="cardEmbarque flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino.png" alt="" class="cursor-pointer">
-                    <p class="font-bold text-base mb-2 mt-6">Santos</p>
-                    <button class="bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA MAIS</button>
+                <div class="mt-5 text-[#888] transition-opacity opacity-0 invisible absolute h-auto max-h-[0px] text-left text-xs md:text-xl group-focus:relative group-focus:visible group-focus:max-h-screen group-focus:opacity-100 group-focus:duration-1000 px-8 md:px-8 group-focus:py-8 group-focus:pt-0">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet mattis mi. Curabitur at fermentum urna. Integer iaculis non leo nec dignissim. Nam accumsan leo nec feugiat placerat. Pellentesque quis malesuada ipsum, at fermentum diam. Ut sit amet suscipit eros. Duis egestas enim sit amet est tristique, in vestibulum tortor porta. 
                 </div>
-            </div>
-        </section>
+            </div><!-- faq item -->
+            <div class="m-0 space-y-10 text-left"></div>
 
-        <section id="quebra">
-            <p
-                class="font-bold italic text-white text-5xl bg-fuchsia-600 w-screen flex items-center justify-center p-12">
-                Descubra os melhores cruzeiros de Reveillon</p>
-        </section>
-
-        <section id="cruzeiros">
-            <div class="cardCruzeiros-organizer grid grid-cols-3 m-16 gap-x-16 gap-y-8">
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-                <div class="cardCruzeiros bg-gray-200 w-96 flex flex-col justify-center items-center">
-                    <img src="./imgs/capa de destino 2.png" alt="" class="cursor-pointer pb-2 bg-fuchsia-600">
-                    <div class="textos p-8">
-                        <p class="text-xs">O cruzeiro de Réveillon do Costa Favolosa está com roteiros internacionais,
-                            saindo de Santos ou
-                            Itajaí e passando por Buenos Aires em sete noites de viagem. Nesse que selecionamos, o
-                            embarque
-                            e desembarque é na capital argentina [...]</p>
-                        <br>
-                        <p class="text-xs">
-                            Duração: 10 noites</br>
-                            Embarque: Buenos Aires – 31/12/2023</br>
-                            Roteiro: Buenos Aires – Santos – Itajaí – Ilhabela –</br> Santos – Itajaí – Montevidéu –
-                            Buenos Aires </br>
-                            Tarifa: a partir de R$ 8.004,00 por pessoa (taxas inclusas)</br>
-                            Acomodação em cabine interna dupla.
-                        </p>
-                    </div>
-                    <button class=" bg-fuchsia-600 rounded-2xl text-white text-xs w-28 mb-8 h-12 p-4">SAIBA
-                        MAIS</button>
-                </div>
-            </div>
-        </section>
-
-        <section id="quebra">
-            <p
-                class="font-bold italic text-white text-5xl bg-fuchsia-600 w-screen flex items-center justify-center p-12">
-                Conheça mais sobre cruzeiros de Reveillon</p>
-        </section>
-
-        <section id="videos">
-            <div class=" grid grid-cols-3 m-16 gap-x-16 gap-y-8">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vNVbZovEX4w?si=zvBYkX8TKEnhYS4e"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class=" w-96 h-56"></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vNVbZovEX4w?si=zvBYkX8TKEnhYS4e"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class=" w-96 h-56"></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/vNVbZovEX4w?si=zvBYkX8TKEnhYS4e"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class=" w-96 h-56"></iframe>
-            </div>
-        </section>
-
-        <section id="Destaques">
-            <div class="flex flex-col justify-center items-center">
-                <p class="font-bold text-2xl">Navios em Destaque</p>
-                <p class="text-gray-600 text-xs">Descubra a embarcação perfeita para o seu Reveillon</p>
-            </div>
-            <div class="grid grid-cols-3 m-16 gap-x-16 gap-y-8">
-                <div class="cardDestaques relative w-96">
-                    <p class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">MSC Seaview</p>
-                    <img src="./imgs/capa de destino 3.png" alt="" class="cursor-pointer pb-2 bg-gray-300">
-                </div>
-                <div class="cardDestaques relative w-96">
-                    <p class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">MSC Seaview</p>
-                    <img src="./imgs/capa de destino 3.png" alt="" class="cursor-pointer pb-2 bg-gray-300">
-                </div>
-                <div class="cardDestaques relative w-96">
-                    <p class="absolute bottom-10 right-10 z-10 text-white font-semibold text-3xl">MSC Seaview</p>
-                    <img src="./imgs/capa de destino 3.png" alt="" class="cursor-pointer pb-2 bg-gray-300">
-                </div>
-            </div>
-
-        </section>
-
-        <section id="quebra">
-            <p
-                class="font-bold italic text-white text-5xl bg-fuchsia-600 w-screen flex items-center justify-center p-12">
-                Perguntas sobre cruzeiros de Reveillon</p>
-        </section>
-
-        <section id="faq">
-
-            <div class="faq-area"></div>
-
-            <button class="m-16"><a href="#"><img src="./imgs/btn whatsapp.png" alt=""></a></button>
-
-        </section>
-
-        <footer>
-            <div
-                class=" italic text-white text-xs bg-fuchsia-600 w-screen flex flex-col items-center justify-center p-12">
-                <img src="./imgs/Logo.png" alt="">
-                <p>2024 - Cruzeiros de Reveillon - Sua viagem começa aqui</p>
-            </div>
-        </footer>
-
-    </div>
-</body>
-
+			<a
+				class="bg-[#4bd74a] text-white lg:text-2xl font-bold rounded-xl uppercase w-auto h-16 mx-auto inline-flex flex-shrink align-center mx-auto items-center mt-16"
+				href="#"
+				title="Reserve agora pelo whatsapp">
+				<img
+					src="./imgs/whatsapp_logo-wbg.webp"
+					title="whatsapp"
+					class="h-16 relative -bottom-2 -left-2 mr-2"
+					alt="Whatsapp"
+					title="whatsapp" />
+				<span class="pr-8"
+					>Reserve agora pelo whatsapp</span
+				>
+			</a>
+		</section>
+		<footer class="relative mt-16 bg-fuchsia-600 w-full">
+			<div
+				class="text-white text-xs w-full flex flex-col items-center justify-center p-7 max-w-[1200px] mx-auto lg:px-0 px-10">
+				<img
+					src="./imgs/logo-cruzeiros-reveillon.webp"
+					alt="Cruzeiros Reveillon"
+					title="Cruzeiros Reveillon"
+					loading="lazy" />
+				<p class="text-sm mt-5 text-center">
+					2024 - Cruzeiros de Reveillon - Sua
+					viagem começa aqui
+				</p>
+			</div>
+			<img
+				src="./imgs/estrela-footer.webp"
+				alt="strelas decoração-footer"
+				class="absolute top-5 left-10 w-40 z-10 mix-blend-overlay"
+				loading="lazy" />
+		</footer>
+	</body>
 </html>
